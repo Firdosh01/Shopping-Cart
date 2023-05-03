@@ -1,7 +1,7 @@
 import React from 'react'
 
-
-function Product( {items}) {  
+function Product( {items}) {
+  
   return (
     <div>
       <div>
@@ -20,6 +20,19 @@ function Product( {items}) {
         <p>{items.price}</p>
       </div>
 
+      {
+       false ?
+        (
+          <button >
+            Remove Item
+          </button>
+        ) :
+        (
+          <button>
+            Add To Cart
+          </button>
+        )
+      }
 
     </div>
   )
