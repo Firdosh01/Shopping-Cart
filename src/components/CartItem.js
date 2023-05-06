@@ -1,7 +1,16 @@
 import React from 'react'
 import { HiOutlineTrash } from "react-icons/hi2";
+import { useDispatch } from 'react-redux';
+import {remove} from '../redux/Slices/CartSlice'
 
 function CartItem( {item, itemIndex}) {
+
+    const dispatch = useDispatch();
+
+    const removeFromCart = () => {
+        dispatch(remove(item.id));
+        console.log("Item Removed")
+    }
   return (
     <div>
 
@@ -16,7 +25,7 @@ function CartItem( {item, itemIndex}) {
                 <h1>{item.description}</h1>
                 <div>
                     <p>{item.price}</p>
-                    <div>
+                    <div onClick={removeFromCart}>
                         <HiOutlineTrash />
                     </div>
                 </div>
