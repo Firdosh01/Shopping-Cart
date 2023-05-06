@@ -37,7 +37,7 @@ function Home() {
         loading ?  <Spinner /> :
         items.length > 0 ?
         (
-          <div>
+          <div className='grid max-w-6xl grid-cols-4 p-2 mx-auto space-x-5 min-h-[80vh]'>
             {
               items.map ( (items) => (
 
@@ -48,7 +48,7 @@ function Home() {
           </div>
         )
         :
-        <div>
+        <div className='flex items-center justify-center'>
         <p>No Data Found</p>
         </div>
       }

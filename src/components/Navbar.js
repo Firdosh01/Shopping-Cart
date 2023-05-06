@@ -4,18 +4,18 @@ import { NavLink } from 'react-router-dom'
 
 function Navbar() {
   return (
-    <div className='bg-blue-500'>
-      <div className='flex flex-row justify-between'>
+    <div>
+      <nav className='flex items-center justify-between h-20 max-w-6xl mx-auto'>
         
 
         <NavLink to= "/">    
-        <div>
+        <div className='ml-5'>
         <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dcode%2Blogo&psig=AOvVaw0plY95dc2QowfYT3dZyF4s&ust=1680541358508000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNDHr8fWi_4CFQAAAAAdAAAAABAE"/>
         </div>       
         </NavLink>
 
         
-        <div>
+        <div className='flex items-center mr-5 space-x-6 font-medium text-slate-100'>
           <NavLink to= "/">
           <p>Home</p>
           </NavLink>
@@ -29,7 +29,7 @@ function Navbar() {
           
           
         </div>
-      </div>
+      </nav>
       
     </div>
   )
