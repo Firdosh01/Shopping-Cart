@@ -12,14 +12,12 @@ function Product( {items}) {
 
   const addToCart = () => {
     dispatch(add(items));
-    toast.success('Successfully created!');
-    // console.log("Item added to Cart");
+    toast.success('Item added to Cart');
   }
 
   const removeFromCart = () => {
     dispatch(remove(items.id));
     toast.error("Item removed from Cart")
-    // console.log("Item removed from Cart")
   }
 
   
