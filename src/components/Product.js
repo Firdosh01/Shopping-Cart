@@ -22,9 +22,9 @@ function Product( {items}) {
 
   
   return (
-    <div className='flex flex-col items-center justify-between gap-3 p-4 mt-10 ml-5 transition duration-200 ease-in hover:scale-110 rounded-xl outline'>
+    <div className='flex flex-col items-center justify-between w-full gap-3 p-4 transition  ease-in rounded-xl border-2 border-[#00095] shadow-lg hover:shadow-2xl hover:scale-[1.03] md:hover:scale-[1.05]'>
       <div>
-        <p className='text-gray-700 '>{items.title.split( " ").slice(0,3).join( " ") + "..."}</p>
+        <p className='text-[#1d783e] font-semibold text-lg '>{items.title.split( " ").slice(0,3).join( " ") + "..."}</p>
       </div>
 
       <div>
@@ -35,7 +35,7 @@ function Product( {items}) {
         <img src={items.image} alt="" className='w-full h-full' />
       </div>
 
-      <div className='flex justify-between gap-12'>
+      <div className='flex items-center justify-between w-full mt-5'>
         <div>
         <p className='font-semibold text-green-600'>${items.price}</p>
       </div>
@@ -43,12 +43,12 @@ function Product( {items}) {
       {
         cart.some( (p) => p.id == items.id) ?
         (
-          <button className='font-semibold text-gray-700 border-2 border-gray-700 rounded-full text-[12px] p-1 px-3 uppercase hover:bg-gray-700 hover:text-white' onClick={removeFromCart}>
+          <button className='font-semibold text-gray-700 border-2 border-gray-700 rounded-full text-[12px] p-1 px-3 uppercase hover:bg-gray-700 hover:text-white duration-300' onClick={removeFromCart}>
             Remove Item
           </button>
         ) :
         (
-          <button className='font-semibold text-gray-700 border-2 border-gray-700 rounded-full text-[12px] p-1 px-3 uppercase hover:bg-gray-700 hover:text-white' onClick={addToCart}>
+          <button className='font-semibold text-gray-700 border-2 border-gray-700 rounded-full text-[12px] p-1 px-3 uppercase hover:bg-gray-700 hover:text-white duration-300' onClick={addToCart}>
             Add To Cart
           </button>
         )

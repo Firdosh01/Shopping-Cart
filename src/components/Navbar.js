@@ -15,7 +15,7 @@ function Navbar() {
 
         <NavLink to= "/">    
         <div className='ml-5'>
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dcode%2Blogo&psig=AOvVaw0plY95dc2QowfYT3dZyF4s&ust=1680541358508000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNDHr8fWi_4CFQAAAAAdAAAAABAE"/>
+        <img src='../logo.png' alt="" className="h-8 lg:h-14 md:h-10" />
         </div>       
         </NavLink>
 

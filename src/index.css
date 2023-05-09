@@ -59,3 +59,10 @@
        transform: scaleY(-1) rotate(-135deg);
     }
  }
+
+ .Spinner{
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
